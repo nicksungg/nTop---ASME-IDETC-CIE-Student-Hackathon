@@ -1,0 +1,13 @@
+# Optimizer benchmark (versions it was run with)
+numpy>=1.23
+scipy>=1.9
+pandas>=1.5
+matplotlib>=3.6
+scikit-learn==1.6.1   # the shipped models/*.joblib were pickled with 1.6.1
+joblib
+torch>=2.1            # CPU works; a GPU speeds up qLogNEI / qLogNEHVI / TabPFN
+botorch>=0.12         # SCBO, qLogNEI, qLogNEHVI  (run with 0.18.1)
+gpytorch
+tabpfn==2.1.0         # TabPFN-CEI / TabPFN-UCB (downloads model weights on first use)
+cma>=3.3              # CMA-ES  (run with 4.4.4)
+pymoo>=0.6            # NSGA-II (run with 0.6.2)

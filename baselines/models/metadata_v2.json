@@ -1,0 +1,192 @@
+{
+  "features": [
+    "Skin Thickness",
+    "Front Spar Chord %",
+    "Rear Spar Chord %",
+    "Spar Thickness",
+    "# of Ribs",
+    "Rib Thickness",
+    "Wingbox Cutout",
+    "# of Fuselage Ribs",
+    "# of Fuselage Spars",
+    "Fuselage Struct Thickness",
+    "Fuselage Struct Width",
+    "C2/C1",
+    "C3/C1",
+    "C4/C1",
+    "B1/C1",
+    "B2/C1",
+    "B3/C1",
+    "X3/C1",
+    "S1",
+    "S3",
+    "C1",
+    "Altitude",
+    "KCAS",
+    "AOA"
+  ],
+  "struct": [
+    "Skin Thickness",
+    "Front Spar Chord %",
+    "Rear Spar Chord %",
+    "Spar Thickness",
+    "# of Ribs",
+    "Rib Thickness",
+    "Wingbox Cutout",
+    "# of Fuselage Ribs",
+    "# of Fuselage Spars",
+    "Fuselage Struct Thickness",
+    "Fuselage Struct Width"
+  ],
+  "geom": [
+    "C2/C1",
+    "C3/C1",
+    "C4/C1",
+    "B1/C1",
+    "B2/C1",
+    "B3/C1",
+    "X3/C1",
+    "S1",
+    "S3",
+    "C1"
+  ],
+  "flight": [
+    "Altitude",
+    "KCAS",
+    "AOA"
+  ],
+  "data": "/orcd/data/faez/001/nick/ntop_structures/dataset_v33_merged_clean.csv",
+  "al_yield_Pa": 503000000.0,
+  "safety_factor": 1.5,
+  "allowable_Pa": 335333333.3333333,
+  "stress_target": "log10(max_stress_Pa)",
+  "volume_target": "payload_volume_m3",
+  "fuel_volume_target": "fuel_volume_m3",
+  "bounds": {
+    "Skin Thickness": [
+      0.0006000058083096,
+      0.0034485909161623
+    ],
+    "Front Spar Chord %": [
+      0.1800242013763636,
+      0.3499778221733868
+    ],
+    "Rear Spar Chord %": [
+      0.5500026293098927,
+      0.7499627461656928
+    ],
+    "Spar Thickness": [
+      0.0011002827258431,
+      0.005637264748034
+    ],
+    "# of Ribs": [
+      4.0,
+      14.0
+    ],
+    "Rib Thickness": [
+      0.0015,
+      0.0057497116671875
+    ],
+    "Wingbox Cutout": [
+      0.01,
+      0.0459955198075622
+    ],
+    "# of Fuselage Ribs": [
+      3.0,
+      11.0
+    ],
+    "# of Fuselage Spars": [
+      3.0,
+      11.0
+    ],
+    "Fuselage Struct Thickness": [
+      0.0020001631060149,
+      0.01149649630161
+    ],
+    "Fuselage Struct Width": [
+      0.0012000473235268,
+      0.0068978654198348
+    ],
+    "C2/C1": [
+      0.5500307532027364,
+      0.8499637116678058
+    ],
+    "C3/C1": [
+      0.180004627648741,
+      0.2799989253468812
+    ],
+    "C4/C1": [
+      0.0600038407277315,
+      0.0899972346704453
+    ],
+    "B1/C1": [
+      0.1000104047358036,
+      0.1999905382283032
+    ],
+    "B2/C1": [
+      0.0500959428958594,
+      0.1999828134663403
+    ],
+    "B3/C1": [
+      0.3500088114291429,
+      0.6999506283551454
+    ],
+    "X3/C1": [
+      0.500023000780493,
+      0.6499778209254146
+    ],
+    "S1": [
+      40.0021848641336,
+      59.99764220789075
+    ],
+    "S3": [
+      20.00471994280815,
+      39.995278008282185
+    ],
+    "C1": [
+      2500.319786369801,
+      3999.733452685177
+    ],
+    "Altitude": [
+      0.0014928672462701,
+      17.999923523515463
+    ],
+    "KCAS": [
+      33.01891627907753,
+      249.95077240467072
+    ],
+    "AOA": [
+      -7.999197952449322,
+      15.999173119664192
+    ]
+  },
+  "int_vars": [
+    "# of Ribs",
+    "# of Fuselage Ribs",
+    "# of Fuselage Spars"
+  ],
+  "metrics": {
+    "weight": {
+      "r2": 0.9976957696029544,
+      "mae": 3.0955501782079753,
+      "rmse": 5.701508513286288
+    },
+    "stress": {
+      "r2": 0.6488424454204014,
+      "mae": 0.28693155283987487,
+      "rmse": 0.37527048353519404
+    },
+    "volume": {
+      "r2": 0.998454885919954,
+      "mae": 0.009305129340898052,
+      "rmse": 0.0131755034923421
+    },
+    "fuel_volume": {
+      "r2": 0.9973707189953205,
+      "mae": 0.004989375040163434,
+      "rmse": 0.007311973226624378
+    }
+  },
+  "n_train": 9889,
+  "n_test": 2473
+}
