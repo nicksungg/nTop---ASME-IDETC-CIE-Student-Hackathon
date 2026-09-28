@@ -27,6 +27,8 @@ Run everything from this `baselines/` folder.
 
 ```bash
 pip install -r requirements.txt
+# or, with conda (exact versions the benchmark was run with):
+#   PYTHONNOUSERSITE=1 conda env create -f environment.yml && conda activate bwb-baselines
 
 python bo_bench/smoke_test.py      # all 8 optimizers, tiny budgets, ~30 s on CPU, writes nothing
 python bo_bench/run_bench.py       # full benchmark: 6 operating points x 8 methods (~35 min, GPU)
